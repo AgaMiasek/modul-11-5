@@ -1,6 +1,6 @@
-   function Button(text) {
-   	this.text = text;
-  }
+function Button(text) {
+	this.text = text|| 'hello!';
+}
 
 Button.prototype = {
    	create: function() {
@@ -12,11 +12,11 @@ Button.prototype = {
 		});
 		 this.$element.appendTo($('body'));
 		
-		}
+	}
 }
   
   
-var btn = new Button('Hello!');
+var btn = new Button();
 btn.create();
 
    
